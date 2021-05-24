@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.site-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+
+}
+
+
+.chat-box {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.nav-boxes {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item-box {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: rgb(165, 158, 158, 0.5);
+  display: inline-block;
+}
+
+.nav-item-box-acitve{
+  background-color: rgb(165, 158, 158, 1);
+}
+.chat-heading {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+
+}
+
+form{
+  width: 100%;
+
+}
+
+form:invalid .next-step:hover{
+  background-color: rgba(92, 147, 241, 0.349);
+  cursor: not-allowed;
+
+}
+
+.payment-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  width: 100%;
+
+}
+
+.payment-item {
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid rgba(117, 115, 115, 0.199);
+  transition: background-color 0.3s ease,
+
+}
+
+.item-card-name{
+  text-transform: uppercase;
+  margin-left: 10px;
+  color: rgba(82, 79, 79, 0.644);
+  transition: color 0.3s ease;
+  /* color: black; */
+
+}
+
+.payment-item:hover{
+  background-color: rgba(230, 230, 230, 0.466);
+}
+
+.payment-item:hover .item-card-name{
+  color: rgb(82, 79, 79);
+}
+
+.item-card{
+  display: flex;
+  align-items: center;
+}
+
+.item-radio-control{
+  width: 25px;
+  height: 25px;
+}
+
+.input-radio:checked + .item-card .item-card-name {
+  color: black;
+}
+
+.input-radio:checked ~ .item-radio-control {
+  background-image: url("img/check.svg");
+}
+
+
+
+
+.next-step{
+  display:flex;
+  font-weight: 700px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 18px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #5081D7;
+  transition: background-color 0.3s ease, transform 0.3s ease ;
+  transform-origin: right bottom;
+}
+
+.next-step::after {
+  margin-left: 10px;
+  content: '';
+  display: block;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-image: url("/img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+
+.next-step:hover{
+  background-color: rgb(92, 147, 241);
+}
+
+.next-step:active{
+  background-color: #5c93f1b2;
+  transform: translateY(5px);
+}
+
