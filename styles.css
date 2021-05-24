@@ -114,19 +114,23 @@ form:invalid .next-step:hover{
 }
 
 .payment-item {
+
+
+}
+
+
+.item-radio-label{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-left: 30px;
   padding-right: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
-  display: block;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-top: 2px solid rgba(117, 115, 115, 0.199);
-  transition: background-color 0.3s ease,
-
+  transition: background-color 0.3s ease;
 }
-
 .item-card-name{
   text-transform: uppercase;
   margin-left: 10px;
@@ -152,6 +156,7 @@ form:invalid .next-step:hover{
 .item-radio-control{
   width: 25px;
   height: 25px;
+  display: block;
 }
 
 .input-radio:checked + .item-card .item-card-name {

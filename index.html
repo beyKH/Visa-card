@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,58 +9,58 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
   <main class="site-content">
     <div class="container chat-box">
 
-        <div class="nav-boxes">
-          <span class="nav-item-box nav-item-box-acitve"></span>
-          <span class="nav-item-box"></span>
-          <span class="nav-item-box"></span>
-        </div>
+      <div class="nav-boxes">
+        <span class="nav-item-box nav-item-box-acitve"></span>
+        <span class="nav-item-box"></span>
+        <span class="nav-item-box"></span>
+      </div>
 
-        <h3 class="chat-heading">Payment Method</h3>
+      <h3 class="chat-heading">Payment Method</h3>
 
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <ul class="payment-list">
-
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <ul class="payment-list">
+          <li class="payment-item">
             <label class="item-radio-label">
-              <li class="payment-item">
-
-                <input class="visually-hidden input-radio" type="radio" name="card-type" value="visa card" required>
-                  <div class="item-card">
-                    <img src="img/visa.svg" alt="visa card logo image" width="65" height="25">
-                    <h4 class="item-card-name">Visa</h4>
-                  </div>
-                <span class="item-radio-control"></span>
-              </li>
+              <input class="visually-hidden input-radio" type="radio" name="card-type" value="visa card" required>
+              <div class="item-card">
+                <img src="img/visa.svg" alt="visa card logo image" width="65" height="25">
+                <h4 class="item-card-name">Visa</h4>
+              </div>
+              <span class="item-radio-control"></span>
             </label>
+          </li>
 
+          <li class="payment-item">
             <label class="item-radio-label">
-              <li class="payment-item">
-                <input class="visually-hidden input-radio" type="radio" name="card-type" value="mastercard" required>
-                <div class="item-card">
-                  <img src="img/mastercard.svg" alt="mastercard card logo image" width="65" height="25">
-                  <h4 class="item-card-name">Mastercard</h4>
-                </div>
-                <span class="item-radio-control"></span>
-              </li>
+              <input class="visually-hidden input-radio" type="radio" name="card-type" value="mastercard" required>
+              <div class="item-card">
+                <img src="img/mastercard.svg" alt="mastercard card logo image" width="65" height="25">
+                <h4 class="item-card-name">Mastercard</h4>
+              </div>
+              <span class="item-radio-control"></span>
             </label>
+          </li>
 
+          <li class="payment-item">
             <label class="item-radio-label">
-              <li class="payment-item">
-                <input class="visually-hidden input-radio" type="radio" name="card-type" value="maestro card" required>
-                <div class="item-card">
-                  <img src="img/maestro.svg" alt="maestro card logo image" width="65" height="25">
-                  <h4 class="item-card-name" >Maestro</h4>
-                </div>
+              <input class="visually-hidden input-radio" type="radio" name="card-type" value="maestro card" required>
+              <div class="item-card">
+                <img src="img/maestro.svg" alt="maestro card logo image" width="65" height="25">
+                <h4 class="item-card-name">Maestro</h4>
+              </div>
               <span class="item-radio-control maestro-control"></span>
-            </li>
-          </label>
-          </ul>
-          <a class="next-step" >Next Step</a>
-        </form>
+            </label>
+          </li>
+        </ul>
+        <a class="next-step">Next Step</a>
+      </form>
     </div>
   </main>
 </body>
+
 </html>
